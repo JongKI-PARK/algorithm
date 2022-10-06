@@ -30,6 +30,21 @@ The heap data structure is logically a complete binary tree, but physically(actu
 ### 6. 2-5
 > The code for MAX-HEAPIFY is quite efficient in terms of constant factors, except possibly for the recursive call in line 10, which might cause some compilers to produce inefficient code. Write an efficient MAX-HEAPIFY that uses an iterative control construct (a loop) instead of recursion.
 
+### 6. 3-1
+
+### 6. 3-2
+
+### 6. 3-3
+
+### 6. 4-1
+
+### 6. 4-3
+
+### 6. 5-2
+
+### 6. 5-4
+
+### 6. 5-6
 
 ## Codes
 
