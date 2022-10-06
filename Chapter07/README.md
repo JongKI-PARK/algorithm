@@ -3,6 +3,53 @@
 
 ## Exercises & Problems
 
+### 7. 1-1 
+> Using Figure 7.1 as a model, illustrate the operation of PARTITION on the array A = 13, 19, 9, 5, 12, 8, 7, 4, 11, 2, 6, 21.
+
+### 7. 1-2 
+> What value of q does PARTITION return when all elements in the array A[p ... r] have the same value? Modify PARTITION so that q = (p+r)/2 when all elements in the array A[p ... r] have the same value. 
+
+### 7. 1-3 
+> Give a brief argument that the running time of PARTITION on a subarray of size n is Θ(n). 
+
+### 7. 2-1 
+> Use the substitution method to prove that the recurrence T (n) = T (n - 1) + Θ(n) has the solution T (n) = Θ(n^2), as claimed at the beginning of Section 7.2.
+
+### 7. 2-2 
+> What is the running time of QUICKSORT when all elements of array A have the same value? 
+
+### 7. 2-3 
+> Show that the running time of QUICKSORT is Θ(n^2) when the array A contains distinct elements and is sorted in decreasing order.
+
+### 7. 4-1 
+> Show that in the recurrence $$$$$$$$$$picture
+
+### 7. 4-2 
+> Show that quicksort's best-case running time is Ω(n lg n).
+
+### 7. 4-5 
+> The running time of quicksort can be improved in practice by taking advantage of the fast running time of insertion sort when its input is "nearly" sorted. When quicksort is called on a subarray with fewer than k elements, let it simply return without sorting the subarray. After the top-level call to quicksort returns, run insertion sort on the entire array to finish the sorting process. Argue that this sorting algorithm runs in O(nk + n lg(n/k)) expected time. How should k be picked, both in theory and in practice?
+
+### 7-1 (Problems)
+> Hoare partition correctness 
+> The version of PARTITION given in this chapter is not the original partitioning algorithm. Here is the original partition algorithm, which is due to T. Hoare:
+  ```
+  HOARE-PARTITION(A, p, r) 
+   1 x ← A[p] 
+   2 i ← p - 1 
+   3 j ← r + 1 
+   4 while TRUE 
+   5 do repeat j ← j - 1 
+   6 until A[j] ≤ x
+   7 repeat i ← i + 1 
+   8 until A[i] ≥ x
+   9 if i < j
+  10 then exchange A[i] ↔ A[j] 
+  11 else return j
+  ```
+
+
+
 ## Codes
 
 ## References
