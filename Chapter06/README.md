@@ -6,6 +6,17 @@ The heap data structure is logically a complete binary tree, but physically(actu
 
 ## Exercises & Problems
 
+### 6. 2-1
+> Using Figure 6.2 as a model, illustrate the operation of MAX-HEAPIFY(A, 3) on the array A = 27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0. 
+
+### 6. 2-3
+
+### 6. 2-4
+
+### 6. 2-5
+
+
+
 ## Codes
 
 ## References
