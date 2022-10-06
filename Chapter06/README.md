@@ -10,11 +10,14 @@ The heap data structure is logically a complete binary tree, but physically(actu
 > Using Figure 6.2 as a model, illustrate the operation of MAX-HEAPIFY(A, 3) on the array A = 27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0. 
 
 ### 6. 2-3
+> What is the effect of calling MAX-HEAPIFY(A, i) when the element A[i] is larger than its children? 
 
 ### 6. 2-4
+> What is the effect of calling MAX-HEAPIFY(A, i) for i > heap-size[A]/2? 
+
 
 ### 6. 2-5
-
+> The code for MAX-HEAPIFY is quite efficient in terms of constant factors, except possibly for the recursive call in line 10, which might cause some compilers to produce inefficient code. Write an efficient MAX-HEAPIFY that uses an iterative control construct (a loop) instead of recursion.
 
 
 ## Codes
