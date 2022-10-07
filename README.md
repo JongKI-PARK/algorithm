@@ -11,5 +11,5 @@ Finally, I would like to express my gratitude to Professor Junmo Kim for providi
 
 ## References
 [1]  Thomas, H. Cormen, Charles, E. Leiserson, Ronald, L. Rivest, & Clifford, Stein (2001). Introduction to Algorithms (2nd ed.). McGraw-Hill Science.  
-[2]  https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazJFR2dUY0pWekRVNjdPNDF5VXZweFpqbTdjZ3xBQ3Jtc0ttQ3RZdVlpS0Fxb0c0WGdOSWVJTTJWQTJ2Sml3djA3MWM1UmlNRW5xN3VobE1DNDljbWFXRXZJT1V1WXpQOVhEMktUenhaLTJJaExiaEtEZnNiaDJUc0UwOHdtdjVUWmJISjlwcXFjcXdCS1lGUl9sZw&q=https%3A%2F%2Focw.mit.edu  
+[2]  MIT OpenCourseWare https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazJFR2dUY0pWekRVNjdPNDF5VXZweFpqbTdjZ3xBQ3Jtc0ttQ3RZdVlpS0Fxb0c0WGdOSWVJTTJWQTJ2Sml3djA3MWM1UmlNRW5xN3VobE1DNDljbWFXRXZJT1V1WXpQOVhEMktUenhaLTJJaExiaEtEZnNiaDJUc0UwOHdtdjVUWmJISjlwcXFjcXdCS1lGUl9sZw&q=https%3A%2F%2Focw.mit.edu  
 [3]  
