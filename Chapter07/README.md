@@ -16,7 +16,7 @@
 In n-element array A, PARTITION pick a pivot element x in A and partition the array into subarrays. But remember the pivot is a value, not index.  
 <pre>
 -----------------------------------
-|    < x      |  x  |    > x      |
+|     < x      |  x  |     > x      |
 -----------------------------------
 </pre>
 
