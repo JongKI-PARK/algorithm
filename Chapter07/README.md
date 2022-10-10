@@ -19,7 +19,7 @@ In n-element array A, PARTITION pick a pivot element x in A and partition the ar
 |     < x      |  x  |     > x      |
 -----------------------------------
 </pre>
-
+Partition takes O(n) time because it looks at every element in the array.  
 
 ## Exercises & Problems
 
