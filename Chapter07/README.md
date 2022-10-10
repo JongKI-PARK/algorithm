@@ -1,7 +1,7 @@
 
 # 7. Quicksort
 
-  Quicksork, like merge sort, is based on the divide-and-conquer paradigm.  
+  Quicksork, like merge sort, is based on the divide-and-conquer paradigm. But quick sort is sorted in-place unlike merge sort algorithm. The key to the quicksort algorithm is the PARTITION procedure which rearranges the subarray A[p ... r] in place.  
 
 ## Exercises & Problems
 
