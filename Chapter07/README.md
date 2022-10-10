@@ -1,7 +1,25 @@
 
 # 7. Quicksort
 
-  Quicksork, like merge sort, is based on the divide-and-conquer paradigm. But quick sort is sorted in-place unlike merge sort algorithm. The key to the quicksort algorithm is the PARTITION procedure which rearranges the subarray A[p ... r] in place.  
+  Quicksork, like merge sort, is based on the divide-and-conquer paradigm. Merge sort doesn't work in practice because of the auxiliary space that merge sort requires. There are two interesting and important aspects to quicksort. First thing is in place update, and the other is that all the work is in divide step. The key to the quicksort algorithm is the PARTITION procedure which rearranges the subarray A[p ... r] in place.  
+  ```
+  PARTITION(A, p, r)
+  1  x <- A[r]
+  2  i <- p - 1
+  3  for j <- p to r - 1 
+  4       do if A[j] <= x
+  5          i < -i + 1
+  6          exchange A[i] <-> A[j]
+  7  exchange A[i + 1] <-> A[r]
+  8  return i + 1
+  ```
+In n-element array A, PARTITION pick a pivot element x in A and partition the array into subarrays. But remember the pivot is a value, not index.  
+<pre>
+-----------------------------------
+|    < x      |  x  |    > x      |
+-----------------------------------
+</pre>
+
 
 ## Exercises & Problems
 
