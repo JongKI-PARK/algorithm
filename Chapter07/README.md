@@ -1,6 +1,8 @@
 
 # 7. Quicksort
 
+  Quicksork, like merge sort, is based on the divide-and-conquer paradigm.  
+
 ## Exercises & Problems
 
 ### 7. 1-1 
