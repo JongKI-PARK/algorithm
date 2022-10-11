@@ -5,6 +5,14 @@
 
 ### Bubble sort
 > Show the fun time of each line as shown in the insertion sort, then give the worst/best time of bubble sort
+ ```
+ BUBBLESORT(A)
+ 1  for i <- 1 to length[A]
+ 2      do for j <- length[A] downto i + 1
+ 3             do if A[j] < A[j - 1]
+ 4                   then exchange A[j] <-> A[j - 1]
+ ```
+
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
