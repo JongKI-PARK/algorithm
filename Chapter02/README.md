@@ -18,6 +18,7 @@ INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array
 
 <br>
 Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the proble into several subproblems.  
+ 
  ```
  MERGE(A, p, q, r)
   1  n1 <- q - p - 1
@@ -36,7 +37,7 @@ Insertion sort uses an incremental approach: insert a single element A[j] into a
  14            then A[k] ← L[i] 
  15                 i ← i + 1 
  16            else A[k] ← R[j] 
- 17                 j ← j + 1 
+ 17                 j ← j + 1
  ```
  
 MERGE procedure takes Θ(n) time complexity.  
