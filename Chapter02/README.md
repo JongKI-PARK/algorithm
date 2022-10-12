@@ -1,6 +1,8 @@
 
 # 2. Getting Started   
 
+ Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc.  
+ 
  ```
  INSERTION-SORT(A)
  1  for j >- 2 to length[A]
@@ -12,7 +14,7 @@
  7                  i <- i - 1
  8         A[i + 1] <- key
  ```
-
+Insertion sort is finding the correct position of A[j] in sorted array A[1 ... j - 1]. While finding the right position, it shifts element in the sorted array to the right one by one. INSERTION-SORT has   
 
 ## Exercises & Problems
 
