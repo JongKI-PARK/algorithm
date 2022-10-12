@@ -38,6 +38,7 @@ Insertion sort uses an incremental approach: insert a single element A[j] into a
  16            else A[k] ← R[j] 
  17                 j ← j + 1 
  ```
+ 
 MERGE procedure takes Θ(n) time complexity.  
 
  ```
