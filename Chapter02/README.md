@@ -17,7 +17,7 @@ Why sorting? : Having a sorted list, the problems can be easier. When finding me
 INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array A[1 ... j - 1]. While finding the right position, it shifts element in the sorted array to the right one by one. INSERTION-SORT has Θ(n) steps in terms of key positions. Θ(n) swap/compare per steps. So the time complexity of INSERTION-SORT is Θ(n^2). If binary search is used in the process of selecting the correct position in insertion sort, the time complexity will be O(n lgn) in terms of comparison, but it will still be O(n^2) in terms of swap(shift).  
 
 <br>
-Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the proble into several subproblems 
+Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the proble into several subproblems.  
  ```
  MERGE(A, p, q, r)
   1  n1 <- q - p - 1
