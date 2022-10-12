@@ -1,7 +1,7 @@
 
 # 2. Getting Started   
 
- Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc.  
+Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc.  
  
  ```
  INSERTION-SORT(A)
@@ -16,10 +16,48 @@
  ```
 INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array A[1 ... j - 1]. While finding the right position, it shifts element in the sorted array to the right one by one. INSERTION-SORT has Θ(n) steps in terms of key positions. Θ(n) swap/compare per steps. So the time complexity of INSERTION-SORT is Θ(n^2). If binary search is used in the process of selecting the correct position in insertion sort, the time complexity will be O(n lgn) in terms of comparison, but it will still be O(n^2) in terms of swap(shift).  
 
+<br><br>
+
+Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the proble into several subproblems 
+ ```
+ MERGE(A, p, q, r)
+  1  n1 <- q - p - 1
+  2  n2 <- r - q
+  3  create arrays L[1 ... n1 + 1] and R[1 ... n2 + 1]
+  4  for i <- 1 to n1
+  5      do L[i] <- A[q + i - 1]
+  6  for j <- 1 to n2
+  7      do R[j] <- A[q + j]
+  8  L[n1 + 1] <- ∞
+  9  R[n2 + 1] <- ∞
+ 10  i ← 1 
+ 11  j ← 1 
+ 12  for k ← p to r
+ 13      do if L[i] ≤ R[j] 
+ 14            then A[k] ← L[i] 
+ 15                 i ← i + 1 
+ 16            else A[k] ← R[j] 
+ 17                 j ← j + 1 
+ ```
+MERGE procedure takes Θ(n) time complexity.  
+
+ ```
+ MERGE-SORT(A, p, r) 
+  1  if p < r
+  2  then q ← ⌊(p + r)/2⌋
+  3  MERGE-SORT(A, p, q) 
+  4  MERGE-SORT(A, q + 1, r) 
+  5  MERGE(A, p, q, r)
+ ```
+Overall complexity of the MERGE-SORT algorithm is Θ(n lgn). From the recursion tree of the MERGE-SORT make, we can get the idea of Θ(n lgn) intuitively. The complexity of it's merge step has Θ(n). The height of the recursion tree will be lg n. The overall time T(n) will be Θ(n lgn).  
+
+<br>
+The one advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs Θ(n) auxiliary space.  
+
 ## Exercises & Problems
 
 ### Bubble sort
-> Show the fun time of each line as shown in the insertion sort, then give the worst/best time of bubble sort
+> Show the run time of each line as shown in the insertion sort, then give the worst/best time of bubble sort
  ```
  BUBBLESORT(A)
  1  for i <- 1 to length[A]
