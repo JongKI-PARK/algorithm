@@ -71,6 +71,18 @@ The one advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxi
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
 
+The algorithm INSERTION-SORT at the top of this page is to sort the array into non decreasing order. Here is the algorithm that sorts the array into non increasing order.
+ ```
+ INSERTION-SORT(A)
+ 1  for j <- 2 to length[A]
+ 2      key <- A[j]
+ 3      i <- j - 1
+ 4      while i > 0 and A[i] < key
+ 5            A[i + 1] <- A[i]
+ 6            i <- i - 1
+ 7      A[i + 1] <- key
+ ```
+     
 ### 2. 2-2
 > Consider sorting n numbers stored in array A by first finding the smallest element of A and exchanging it with the element in A[1]. Then find the second smallest element of A, and exchange it with A[2]. Continue in this manner for the first n - 1 elements of A. Write pseudocode for this algorithm, which is known as selection sort. What loop invariant does this algorithm maintain? Why does it need to run for only the first n - 1 elements, rather than for all n elements? Give the best-case and worst-case running times of selection sort in Θ-notation
 
