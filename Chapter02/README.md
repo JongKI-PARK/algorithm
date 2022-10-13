@@ -58,7 +58,7 @@ The one advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxi
 ## Exercises & Problems
 
 ### Bubble sort
-> Show the run time of each line as shown in the insertion sort, then give the worst/best time of bubble sort
+> Show the run time of each line as shown in the insertion sort, then give the worst/average time of bubble sort
  ```
  BUBBLESORT(A)
  1  for i <- 1 to length[A]
@@ -85,6 +85,21 @@ The algorithm INSERTION-SORT at the top of this page is to sort the array into n
      
 ### 2. 2-2
 > Consider sorting n numbers stored in array A by first finding the smallest element of A and exchanging it with the element in A[1]. Then find the second smallest element of A, and exchange it with A[2]. Continue in this manner for the first n - 1 elements of A. Write pseudocode for this algorithm, which is known as selection sort. What loop invariant does this algorithm maintain? Why does it need to run for only the first n - 1 elements, rather than for all n elements? Give the best-case and worst-case running times of selection sort in Θ-notation
+
+ ``` 
+ SELECTION-SORT(A)
+ 1  for i <- 1 to length[A] - 1
+ 2      key <- A[i]
+ 3      min-index <- i
+ 4      for j <- i to length[A]
+ 5          if A[j] < key
+ 6             key <- A[j]
+ 7             min-index <- j
+ 8      if min-index != i
+ 9         exchange A[i] <-> A[min-index]
+ ```
+
+Index i indicates the position where minimum element in A[i ... n] will take place. The elements in A[1 ... i - 1] are not only smaller than all the elements in A[i ... n] but also are in sorted order. The loop in line 1 will run only for the first n - 1 elements because the last element will be and should be the biggest element. So it is the place where it should be. Both best case and worst case of selection sort is Θ(n^2).  
 
 ### 2. 2-3
 > Consider linear search again (see Exercise 2.1-3). How many elements of the input sequence need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst case? What are the average-case and worst-case running times of linear search in Θ-notation? Justify your answers
