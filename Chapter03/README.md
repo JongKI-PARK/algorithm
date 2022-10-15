@@ -6,3 +6,5 @@
 ## Codes
 
 ## References
+[1] https://math.stackexchange.com/questions/367767/how-to-prove-that-nk-o2n
+[2] 
