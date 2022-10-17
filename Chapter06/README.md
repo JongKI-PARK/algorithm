@@ -49,3 +49,5 @@ The heap data structure is logically a complete binary tree, but physically(actu
 ## Codes
 
 ## References
+[1] https://stackoverflow.com/questions/9099110/worst-case-in-max-heapify-how-do-you-get-2n-3  
+[2]  
