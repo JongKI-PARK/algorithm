@@ -105,9 +105,9 @@ Index i indicates the position where minimum element in A[i ... n] will take pla
 > Consider linear search again (see Exercise 2.1-3). How many elements of the input sequence need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst case? What are the average-case and worst-case running times of linear search in Θ-notation? Justify your answers
 
 ### 2. 3-4
-> Insertion sort can be expressed as a recursive procedure as follows. In order to sort A[1 ... n], we recursively sort A[1 ... n -1] and then insert A[n] into the sorted array A[1 ... n - 1]. Write a recurrence for the running time of this recursive version of insertion sort. 
+> Insertion sort can be expressed as a recursive procedure as follows. In order to sort A[1 ... n], we recursively sort A[1 ... n -1] and then insert A[n] into the sorted array A[1 ... n - 1]. Write a recurrence for the running time of this recursive version of insertion sort.  
 ++++code for recursive version of insertion sort++++
-The recursive version of insertion sort can be expressed by T(n) = T(n - 1) + Θ(n) which has Θ(n^2) running time. 
+The recursive version of insertion sort can be expressed by T(n) = T(n - 1) + Θ(n) which has Θ(n^2) running time.  
 
 ## Codes
 
