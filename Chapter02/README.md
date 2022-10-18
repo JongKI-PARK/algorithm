@@ -106,6 +106,8 @@ Index i indicates the position where minimum element in A[i ... n] will take pla
 
 ### 2. 3-4
 > Insertion sort can be expressed as a recursive procedure as follows. In order to sort A[1 ... n], we recursively sort A[1 ... n -1] and then insert A[n] into the sorted array A[1 ... n - 1]. Write a recurrence for the running time of this recursive version of insertion sort. 
+++++code for recursive version of insertion sort++++
+The recursive version of insertion sort can be expressed by T(n) = T(n - 1) + Θ(n) which has Θ(n^2) running time. 
 
 ## Codes
 
