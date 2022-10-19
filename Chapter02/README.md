@@ -50,10 +50,10 @@ MERGE procedure takes $Θ(n)$ time complexity. It takes $Θ(n)$ time to merge tw
   4  MERGE-SORT(A, q + 1, r) 
   5  MERGE(A, p, q, r)
  ```
-Continuing to divide a given array in half until there is one element takes $Θ(lg^n)$ time. So the overall time complexity of the MERGE-SORT algorithm is $Θ(n lg^n)$. The recursion relation of the Merge sort is T(n) = 2T(n/2) + Θ(n). From the recursion tree of the MERGE-SORT make, we can get the idea of Θ(n lgn) intuitively. The complexity of it's merge step has Θ(n). The height of the recursion tree will be lg n. The overall time T(n) will be Θ(n lgn).  
+Continuing to divide a given array in half until there is one element takes $Θ(lg^n)$ time. So the overall time complexity of the MERGE-SORT algorithm is $Θ(n lg^n)$. The recursion relation of the Merge sort is $T(n) = 2T(n/2) + Θ(n)$. From the recursion tree of the MERGE-SORT make, we can get the idea of $Θ(n lg^n)$ intuitively. The complexity of it's merge step has $Θ(n)$. The height of the recursion tree will be $lg^n$. The overall time T(n) will be $Θ(n lg^n)$.  
 
 <br>
-From this point of view, it may seem that insertion sort is unnecessary. But the one big advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs Θ(n) auxiliary space.  
+From this point of view, it may seem that insertion sort is unnecessary. But the one big advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs $Θ(n)$ auxiliary space.  
 
 ## Exercises & Problems
 
@@ -69,7 +69,7 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
 
 |c|times|  
 | :---: | :------: |
-| c<sub>1</sub> | n |  
+| c<sub>1</sub> | n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  
 | c<sub>2</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k+1)}$ |  
 | c<sub>3</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k)}$ |  
 | c<sub>4</sub> | $\displaystyle\sum_{k=1}^{n-1}{t_k}$ |  
