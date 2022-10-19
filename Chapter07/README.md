@@ -15,11 +15,21 @@
   ```
 In n-element array A, PARTITION pick a pivot element x in A and partition the array into subarrays. But remember the pivot is a value, not index.  
 <pre>
------------------------------------
-|     < x      |  x  |     > x      |
------------------------------------
+--------------------------------------
+|     <= x      |  x  |     > x      |
+--------------------------------------
 </pre>
-Partition takes Θ(n) time because it looks at every element in the array.  
+Partition takes Θ(n) time because it looks at every element in the array. It has to look at all values to divide into the subparts of values less than or equal to the pivot and greater than the pivot.  
+  ```
+  QUICKSORT(A, p, r)
+  1  if (p < r)
+  2     do q <- PARTITION(A, p, r)
+  3        QUICKSORT(A, p, q - 1)
+  4        QUICKSORT(A, p, q + 1)
+  ```
+
+QUICKSORT 
+
 
 ## Exercises & Problems
 
