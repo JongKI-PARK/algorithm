@@ -60,12 +60,17 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
 ### Bubble sort
 > Show the run time of each line as shown in the insertion sort, then give the worst/average time of bubble sort
  ```
- BUBBLESORT(A)                                              |        c        |        times        |
- 1  for i <- 1 to length[A] - 1                             |        c<sub>1  |  
- 2      do for j <- length[A] downto i + 1                  |
- 3             do if A[j] < A[j - 1]                        |
- 4                   then exchange A[j] <-> A[j - 1]        |
+ BUBBLESORT(A)
+ 1  for i <- 1 to length[A] - 1
+ 2      do for j <- length[A] downto i + 1
+ 3             do if A[j] < A[j - 1] 
+ 4                   then exchange A[j] <-> A[j - 1]
  ```
+
+|        c        |        times        |  
+|        c<sub>1        |        times        |  
+|        c<sub>2        |        times        |  
+|        c<sub>3        |        times        |  
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
