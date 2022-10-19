@@ -70,9 +70,9 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
 |c|times|  
 | :---: | :---: |
 | c<sub>1</sub> | n |  
-| c_2 | $\displaystyle\sum_{i=1}^{n-1}{(n-i+1)}$ |  
-| c<sub>3</sub> | times |  
-| c<sub>4</sub> | times |  
+| c<sub>2</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k+1)}$ |  
+| c<sub>3</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k)}$ |  
+| c<sub>4</sub> | $\displaystyle\sum_{k=1}^{n-1}{t_k}$ |  
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
