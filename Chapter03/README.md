@@ -41,7 +41,7 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 > Prove that $o(g(n)) ∩ ω(g(n))$ is the empty set.
 
 Proof by Contradiction.  
-If $o(g(n)) ∩ ω(g(n))$ is not an empty set, there is some f(x).  
+If $o(g(n)) ∩ ω(g(n))$ is not an empty set, there is some f(x) that $f(x) = o(g(n)) and f(x) = ω(g(n))$.  
 
 ## Codes
 
