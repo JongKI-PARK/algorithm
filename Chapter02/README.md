@@ -69,7 +69,7 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
 
 |c|times|  
 | :---: | :------: |
-| c<sub>1</sub> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  
+| c<sub>1</sub> | n |  
 | c<sub>2</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k+1)}$ |  
 | c<sub>3</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k)}$ |  
 | c<sub>4</sub> | $\displaystyle\sum_{k=1}^{n-1}{t_k}$ |  
@@ -107,16 +107,23 @@ The algorithm INSERTION-SORT at the top of this page is to sort the array into n
  9         exchange A[i] <-> A[min-index]
  ```
 
-Index i indicates the position where minimum element in A[i ... n] will take place. The elements in A[1 ... i - 1] are not only smaller than all the elements in A[i ... n] but also are in sorted order. The loop in line 1 will run only for the first n - 1 elements because the last element will be and should be the biggest element. So it is the place where it should be. Both best case and worst case of selection sort is Θ(n^2).  
+Index i indicates the position where minimum element in A[i ... n] will take place. The elements in A[1 ... i - 1] are not only smaller than all the elements in A[i ... n] but also are in sorted order. The loop in line 1 will run only for the first n - 1 elements because the last element will be and should be the biggest element. So it is the place where it should be. Both best case and worst case of selection sort is $Θ(n^2)$.  
 
 ### 2. 2-3
 > Consider linear search again (see Exercise 2.1-3). How many elements of the input sequence need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst case? What are the average-case and worst-case running times of linear search in Θ-notation? Justify your answers
 
+For linear search, $n\over 2$ searches will be required on average. The worst case is when there is no element in the array, and a comparison is made with all elements of the array. Both cases has $Θ(n^2)$ run time.  
+
 ### 2. 3-4
 > Insertion sort can be expressed as a recursive procedure as follows. In order to sort A[1 ... n], we recursively sort A[1 ... n -1] and then insert A[n] into the sorted array A[1 ... n - 1]. Write a recurrence for the running time of this recursive version of insertion sort.  
+ 
+ ```
 ++++code for recursive version of insertion sort++++
-The recursive version of insertion sort can be expressed by T(n) = T(n - 1) + Θ(n) which has Θ(n^2) running time.  
+ ```
+The recursive version of insertion sort can be expressed by $T(n) = T(n - 1) + Θ(n)$ which has $Θ(n^2)$ running time.  
 
 ## Codes
+
+Codes(Written in C) for Insertion sort, Bubble sort and Merge sort are included.
 
 ## References
