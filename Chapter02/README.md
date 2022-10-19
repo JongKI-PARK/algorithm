@@ -67,10 +67,11 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
  4                   then exchange A[j] <-> A[j - 1]
  ```
 
-|        c        |        times        |  
-|        c<sub>1</sub>        |        times        |  
-|        c<sub>2</sub>        |        times        |  
-|        c<sub>3</sub>        |        times        |  
+|c|times|  
+| :---: | :---: |
+| c<sub>1</sub> | times |  
+| c<sub>2</sub> | times |  
+| c<sub>3</sub> | times |  
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
