@@ -26,7 +26,7 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 ## Exercises & Problems
 
 ### 3. 1-1
-> Let f(n) and g(n) be asymptotically nonnegative functions. Using the basic definition of Θnotation, prove that max(f(n), g(n)) = Θ(f(n) + g(n)). 
+> Let f(n) and g(n) be asymptotically nonnegative functions. Using the basic definition of Θ-notation, prove that $max(f(n), g(n)) = Θ(f(n) + g(n))$. 
 
 
 ### 3. 1-2
