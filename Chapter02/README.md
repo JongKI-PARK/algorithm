@@ -118,12 +118,32 @@ For linear search, $n\over 2$ searches will be required on average. The worst ca
 > Insertion sort can be expressed as a recursive procedure as follows. In order to sort A[1 ... n], we recursively sort A[1 ... n -1] and then insert A[n] into the sorted array A[1 ... n - 1]. Write a recurrence for the running time of this recursive version of insertion sort.  
  
  ```
-++++code for recursive version of insertion sort++++
+ INSERT(A, index)
+ 1  key <- A[index]
+ 2  i <- index - 1
+ 3  while i > 0 and A[i] > key
+ 4        A[i + 1] <- A[i]
+ 5        i <- i - 1
+ 6  A[i + 1] <- key
+ 
+ INSERTION-SORT(A, size)
+ 1  if (size > 0)
+ 2     INSERTION-SORT(A, size - 1)
+ 3     INSERT(A, size - 1)
  ```
 The recursive version of insertion sort can be expressed by $T(n) = T(n - 1) + Θ(n)$ which has $Θ(n^2)$ running time.  
 
 ## Codes
 
-Codes(Written in C) for Insertion sort, Bubble sort and Merge sort are included.
+Codes(Written in C) for Insertion sort, Bubble sort Selection sort and Merge sort are included.  
+
+| Algorithm | name of the file(code) | Simple Explanation |
+| :---: | :---: | :---: |
+| INSERTION-SORT | insertion_sort1.c | sorting in non-decreasing order |
+| INSERTION-SORT | insertion_sort2.c | sorting in non-increasing order |
+| INSERTION-SORT | insertion_sort3.c | recursive version of selection sort algorithm (sorting in non-decreasing order) |
+| BUBBLE-SORT | bubble_sort.c | . |
+| SELECTION-SORT | selection_sort.c | . |
+| MERGE-SORT | merge_sort.c | . |
 
 ## References
