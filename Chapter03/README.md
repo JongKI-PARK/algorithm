@@ -25,7 +25,22 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 
 ## Exercises & Problems
 
-> 
+### 3. 1-1
+> Let f(n) and g(n) be asymptotically nonnegative functions. Using the basic definition of Θnotation, prove that max(f(n), g(n)) = Θ(f(n) + g(n)). 
+
+
+### 3. 1-2
+> Show that for any real constants a and b, where b > 0, $(n + a)^b = Θ(n^b)$.
+
+
+### 3. 1-4
+> Is $2n+1 = O(2^n)$? Is $2^{2n} = O(2^n)$?
+
+
+### 3. 1-7
+> Prove that $o(g(n)) ∩ ω(g(n))$ is the empty set.
+
+
 ## Codes
 
 ## References
