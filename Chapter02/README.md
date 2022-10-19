@@ -1,8 +1,8 @@
 
 # 2. Getting Started   
 
-Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc.  
- 
+Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc. Let's begin with INSERTION-SORT Algorithm.  
+
  ```
  INSERTION-SORT(A)
  1  for j >- 2 to length[A]
@@ -14,10 +14,10 @@ Why sorting? : Having a sorted list, the problems can be easier. When finding me
  7                  i <- i - 1
  8         A[i + 1] <- key
  ```
-INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array A[1 ... j - 1]. While finding the right position, it shifts element in the sorted array to the right one by one. INSERTION-SORT has Θ(n) steps in terms of key positions. Θ(n) swap/compare per steps. So the time complexity of INSERTION-SORT is Θ(n^2). If binary search is used in the process of selecting the correct position in insertion sort, the time complexity will be O(n lgn) in terms of comparison, but it will still be O(n^2) in terms of swap(shift).  
+INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array A[1 ... j - 1]. To find the right position of newly inserted element, it shifts element in the sorted array to the right one by one. INSERTION-SORT has Θ(n) steps in terms of finding the key positions, Θ(n) swap/compare per steps. So the time complexity of INSERTION-SORT is Θ(n^2). If binary search is used in the process of selecting the correct position in insertion sort, the time complexity will be O(n lgn) in terms of comparison, but it will still be O(n^2) in terms of swap(shift).  
 
 <br>
-Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the proble into several subproblems.  
+Insertion sort uses an incremental approach: insert a single element A[j] into already sorted array A[1 ... j - 1]. There is another approach known as divide and conquer. Divide and conquer approach breaks the problem into several subproblems.  
  
  ```
  MERGE(A, p, q, r)
@@ -40,7 +40,7 @@ Insertion sort uses an incremental approach: insert a single element A[j] into a
  17                 j ← j + 1
  ```
  
-MERGE procedure takes Θ(n) time complexity.  
+MERGE procedure takes Θ(n) time complexity. It takes Θ(n) time to merge two sorted arrays into one sorted array.  
 
  ```
  MERGE-SORT(A, p, r) 
@@ -50,23 +50,22 @@ MERGE procedure takes Θ(n) time complexity.
   4  MERGE-SORT(A, q + 1, r) 
   5  MERGE(A, p, q, r)
  ```
-Overall complexity of the MERGE-SORT algorithm is Θ(n lgn). From the recursion tree of the MERGE-SORT make, we can get the idea of Θ(n lgn) intuitively. The complexity of it's merge step has Θ(n). The height of the recursion tree will be lg n. The overall time T(n) will be Θ(n lgn).  
+Continuing to divide a given array in half until there is one element takes Θ(lgn) time. So the overall time complexity of the MERGE-SORT algorithm is Θ(n lgn). The recursion relation of the Merge sort is T(n) = 2T(n/2) + Θ(n). From the recursion tree of the MERGE-SORT make, we can get the idea of Θ(n lgn) intuitively. The complexity of it's merge step has Θ(n). The height of the recursion tree will be lg n. The overall time T(n) will be Θ(n lgn).  
 
 <br>
-The one advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs Θ(n) auxiliary space.  
+From this point of view, it may seem that insertion sort is unnecessary. But the one big advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs Θ(n) auxiliary space.  
 
 ## Exercises & Problems
 
 ### Bubble sort
 > Show the run time of each line as shown in the insertion sort, then give the worst/average time of bubble sort
  ```
- BUBBLESORT(A)
- 1  for i <- 1 to length[A]
- 2      do for j <- length[A] downto i + 1
- 3             do if A[j] < A[j - 1]
- 4                   then exchange A[j] <-> A[j - 1]
+ BUBBLESORT(A)                                              |        c        |        times        |
+ 1  for i <- 1 to length[A] - 1                             |        c<sub>1  |  
+ 2      do for j <- length[A] downto i + 1                  |
+ 3             do if A[j] < A[j - 1]                        |
+ 4                   then exchange A[j] <-> A[j - 1]        |
  ```
-
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
