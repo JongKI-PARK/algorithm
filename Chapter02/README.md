@@ -142,7 +142,7 @@ The recursive version of insertion sort can be expressed by $T(n) = T(n - 1) + Î
 Codes(Written in C) for Insertion sort, Bubble sort Selection sort and Merge sort are included.  
 
 | Algorithm | name of the file(code) | Function name | Simple Explanation |
-| :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | INSERTION-SORT | insertion_sort1.c | . | sorting in non-decreasing order |
 | INSERTION-SORT | insertion_sort2.c | . | sorting in non-increasing order |
 | INSERTION-SORT | insertion_sort3.c | . | recursive version of selection sort algorithm (sorting in non-decreasing order) |
