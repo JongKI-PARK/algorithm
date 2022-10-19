@@ -15,7 +15,7 @@ O(g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ f(n) �
 Ω(g(n)) = {f(n): there exist positive constants c and n_0 such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n0}. 
 
 o-notation  
-o(g(n)) = {f(n) : for any positive constant c > 0, there exists a constant n0 > 0 such that $0 ≤ f(n) < cg(n) for all n ≥ n0}. 
+o(g(n)) = {f(n) : for any positive constant c > 0, there exists a constant n0 > 0 such that 0 ≤ f(n) < cg(n) for all n ≥ n0}. 
 
 ω-notation  
 ω(g(n)) = {f(n): for any positive constant c > 0, there exists a constant n0 > 0 such that 0 ≤cg(n) < f(n) for all n ≥ n0}. 
@@ -40,6 +40,8 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 ### 3. 1-7
 > Prove that $o(g(n)) ∩ ω(g(n))$ is the empty set.
 
+Proof by Contradiction.  
+If $o(g(n)) ∩ ω(g(n))$ is not an empty set, there is some f(x).  
 
 ## Codes
 
