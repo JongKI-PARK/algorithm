@@ -68,7 +68,7 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
  ```
 
 |c|times|  
-| :---: | :---: |
+| :---: | :-------------: |
 | c<sub>1</sub> | n |  
 | c<sub>2</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k+1)}$ |  
 | c<sub>3</sub> | $\displaystyle\sum_{k=1}^{n-1}{(n-k)}$ |  
