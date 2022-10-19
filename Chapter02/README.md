@@ -68,9 +68,9 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
  ```
 
 |        c        |        times        |  
-|        c<sub>1        |        times        |  
-|        c<sub>2        |        times        |  
-|        c<sub>3        |        times        |  
+|        c<sub>1</sub>        |        times        |  
+|        c<sub>2</sub>        |        times        |  
+|        c<sub>3</sub>        |        times        |  
 
 ### 2. 1-2
 > Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of nondecreasing order. 
