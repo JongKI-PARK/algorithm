@@ -6,16 +6,16 @@ The notations we use to describe the asymptotic running time of an algorithm are
 
 <pre>
 Θ-notation  
-Θ(g(n)) = {f(n) : there exist positive constants c1, c2, and n0 such that $0 ≤ c_1 g(n) ≤ f(n) ≤ c_2 g(n)$ for all $n ≥ n_0$}.
+Θ(g(n)) = {f(n) : there exist positive constants c1, c2, and n0 such that 0 ≤ c1 g(n) ≤ f(n) ≤ c2 g(n) for all n ≥ n0}.
 
 O-notation  
-O(g(n)) = {f(n): there exist positive constants c and n0 such that $0 ≤ f(n) ≤ cg(n)$ for all $n ≥ n_0$}.
+O(g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n0}.
 
 Ω-notation  
-Ω(g(n)) = {f(n): there exist positive constants c and $n_0$ such that $0 ≤ cg(n) ≤ f(n)$ for all $n ≥ n_0$}. 
+Ω(g(n)) = {f(n): there exist positive constants c and n_0 such that 0 ≤ cg(n) ≤ f(n) for all n ≥ n0}. 
 
 o-notation  
-o(g(n)) = {f(n) : for any positive constant c > 0, there exists a constant $n_0 > 0$ such that $0 ≤ f(n) < cg(n) for all n ≥ n0}. 
+o(g(n)) = {f(n) : for any positive constant c > 0, there exists a constant n0 > 0 such that $0 ≤ f(n) < cg(n) for all n ≥ n0}. 
 
 ω-notation  
 ω(g(n)) = {f(n): for any positive constant c > 0, there exists a constant n0 > 0 such that 0 ≤cg(n) < f(n) for all n ≥ n0}. 
@@ -25,6 +25,7 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 
 ## Exercises & Problems
 
+> 
 ## Codes
 
 ## References
