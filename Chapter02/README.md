@@ -55,6 +55,8 @@ Continuing to divide a given array in half until there is one element takes $Θ(
 <br>
 From this point of view, it may seem that insertion sort is unnecessary. But the one big advantage of INSERTION-SORT over MERGE-SORT is that it doesn't need auxiliary space. INSERTION-SORT does in-place update. The MERGE-SORT has to make a copy of the array to do the recursion and put it back to the array. MERGE-SORT needs $Θ(n)$ auxiliary space.  
 
+<br><br>
+
 ## Exercises & Problems
 
 ### Bubble sort
@@ -133,6 +135,8 @@ For linear search, $n\over 2$ searches will be required on average. The worst ca
  ```
 The recursive version of insertion sort can be expressed by $T(n) = T(n - 1) + Θ(n)$ which has $Θ(n^2)$ running time.  
 
+<br><br>
+
 ## Codes
 
 Codes(Written in C) for Insertion sort, Bubble sort Selection sort and Merge sort are included.  
@@ -146,4 +150,8 @@ Codes(Written in C) for Insertion sort, Bubble sort Selection sort and Merge sor
 | SELECTION-SORT | selection_sort.c | . |
 | MERGE-SORT | merge_sort.c | . |
 
+<br><br>
+
 ## References
+[1] https://www.educative.io/answers/what-is-the-stack-smashing-detected-error  
+[2] 
