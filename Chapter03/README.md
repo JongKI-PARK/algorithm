@@ -45,18 +45,21 @@ So $0 \leq c_1 * (f(n) + g(n)) \leq max(f(n), g(n)) \leq c_2 * (f(n) + g(n))$ (w
 
 
 ### 3. 1-4
-> Is $2n+1 = O(2^n)$? 
+> Is $2^{n+1} = O(2^n)$? 
+
+Yes. There is $c_1$ and n which satisfies $2^{n+1} \leq c_1 * (2^n)$. For example, $c_1 = 2$, $n \geq n_0 = 1$.  
 
 > Is $2^{2n} = O(2^n)$?
 
+No. There is no $c_1$ and n which satisfies $2^{2n} \leq c_1 * (2^n)$.  
 
 ### 3. 1-7
 > Prove that $o(g(n)) ∩ ω(g(n))$ is the empty set.
 
 Proof by Contradiction.  
 If $o(g(n)) ∩ ω(g(n))$ is not an empty set, there is some f(x) that $f(x) = o(g(n)) and f(x) = ω(g(n))$.  
-by $f(x) = o(g(n))$, $displaystyle\lim_{n\rarr\infin} {{f(n)} \over {g(n)}} = 0$.  
-by $f(x) = ω(g(n))$, $displaystyle\lim_{n\rarr\infin} {{f(n)} \over {g(n)}} = \infin$.  
+by $f(x) = o(g(n))$, $\displaystyle\lim_{n \rightarrow \infty}{{f(n)} \over {g(n)}} = 0$.  
+by $f(x) = ω(g(n))$, $\displaystyle\lim_{n \rightarrow \infty}{{f(n)} \over {g(n)}} = \infty$.  
 
 
 ## Codes
