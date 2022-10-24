@@ -32,6 +32,8 @@ Consequently, algorithms can (and should) solve all logical computational proble
 The runtime for computational problems can be divided into P / NP -C.  
 * What can be solved in polynomial time is P. Although these are called Efficient algorithms, there are many that have long execution times such as $n$ , $n^2$, $n^3$, $n^4$, $n^5$ ... Therefore, in reality, only algorithms up to $n^2$ are used.  
 * Since NP - C algorithms are approximated to algorithms with P time, it is necessary to know a lot about algorithms with P time.
+* The NP problem can be solved with the brute force method. For example, in the case of the sorting algorithm, it is enough to check whether all n! permutations of n elements have been sorted. However, the census has the potential for exponential growth. n! > $2^n$, and the number of atoms in the universe is said to be about $10^{79}$. With $10^{79}$ = (about) $2^{240}$ , you can guess that even if there are only about 240 elements in the array, it takes a lot of time to investigate with the brute force method.  
+* There is no effective algorithm for NP yet. The problem of whether there is a boundary between P and NP problems is a P/NP problem.  
 
 <br><br><br>
 
