@@ -28,13 +28,26 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 ### 3. 1-1
 > Let f(n) and g(n) be asymptotically nonnegative functions. Using the basic definition of Θ-notation, prove that $max(f(n), g(n)) = Θ(f(n) + g(n))$. 
 
+<ol type="i">
+  <li> Because f(n) and g(n) be asymptotically nonnegative functions, $f(n) \geq 0$ and $g(n) \geq 0$ (where $n \geq n_0$).</li>
+  <li> $f(n) \leq max(f(n), g(n))$ and $g(n) \leq max(f(n), g(n))$ (where $n \geq n_0$).</li>
+</ol>  
+
+From the first one, we can get $(f(n) + g(n)) \geq max(f(n), g(n))$.  
+From the second one, we can get $(f(n) + g(n)) \leq 2* max(f(n), g(n))$.  
+
+So $0 \leq c_1 * (f(n) + g(n)) \leq max(f(n), g(n)) \leq c_2 * (f(n) + g(n))$ (where $c_1 = \frac {1}{2}$ and $c_2 = 1$ , $n \geq n_0$).  
+
+<br>
 
 ### 3. 1-2
 > Show that for any real constants a and b, where b > 0, $(n + a)^b = Θ(n^b)$.
 
 
 ### 3. 1-4
-> Is $2n+1 = O(2^n)$? Is $2^{2n} = O(2^n)$?
+> Is $2n+1 = O(2^n)$? 
+
+> Is $2^{2n} = O(2^n)$?
 
 
 ### 3. 1-7
@@ -42,6 +55,9 @@ The important thing here is "for any positive constants c > 0"  in o-notation an
 
 Proof by Contradiction.  
 If $o(g(n)) ∩ ω(g(n))$ is not an empty set, there is some f(x) that $f(x) = o(g(n)) and f(x) = ω(g(n))$.  
+by $f(x) = o(g(n))$, $displaystyle\lim_{n\rarr\infin} {{f(n)} \over {g(n)}} = 0$.  
+by $f(x) = ω(g(n))$, $displaystyle\lim_{n\rarr\infin} {{f(n)} \over {g(n)}} = \infin$.  
+
 
 ## Codes
 
