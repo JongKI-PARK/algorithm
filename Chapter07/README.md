@@ -69,17 +69,17 @@ QUICKSORT
    2 i ← p - 1 
    3 j ← r + 1 
    4 while TRUE 
-   5 do repeat j ← j - 1 
-   6 until A[j] ≤ x
-   7 repeat i ← i + 1 
-   8 until A[i] ≥ x
-   9 if i < j
-  10 then exchange A[i] ↔ A[j] 
-  11 else return j
+   5       do repeat j ← j - 1 
+   6           until A[j] ≤ x
+   7          repeat i ← i + 1 
+   8           until A[i] ≥ x
+   9          if i < j
+  10             then exchange A[i] ↔ A[j] 
+  11             else return j
   ```
-
 
 
 ## Codes
 
 ## References
+[1] https://stackoverflow.com/questions/7198121/quicksort-and-hoare-partition  
