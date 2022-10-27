@@ -5,7 +5,7 @@ Chapter22 presints methods for representing a graph G = (V + E) and for searchin
 Both adjacency list and adjacency matrices can be used to represent directed and undirected graphs. But adjacency list is usually preferred because it provides a compact way to represent sparse graphs.(Not only in sparse graphs, but usually |E| is less than $|V|^2$)  
 
 ![image](https://user-images.githubusercontent.com/97037853/198192336-56dda1b0-c40f-4c83-adf0-6e98a2cf36f7.png)  
-(Source : Introduction to Algorithms 2nd edition)  
+(Source : Figure 22.1 in Introduction to Algorithms 2nd edition)  
 
 Most of the graph algorithms in this book assume that an input graph is represented in adjacency-list form. The adjacency list representation of a graph G consists of an array which is length of the number of the vertices and each element ($u$) in the array has lists of vertices adjacent to $u$.  
 
