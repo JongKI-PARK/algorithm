@@ -20,6 +20,10 @@ If the graph is represented in ***adjacency list***,
 The space here is the amount of space that data structure(a graph expressed as a adjacency list) takes place.  
 The degree(u) is the number of vertices(nodes) adjacent to $u$.  
 To determine if $(u, v) \in E$, the upper bound of the elements to be examined is degree(u).  
+To represent a weighted graph as an adjacency list, add a weight field to each list.  
+
+A potential disadvantage of the adjacency-list representation
+ * The only way to check whether a given edge (u, v) is on the graph is to check the array Adj[u].  
 
 <br>  
 
@@ -34,6 +38,7 @@ If the graph is represented in ***adjacency matrix***,
 The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
 To determine if $(u, v) \in E$, you only need to look at $G(u, v)$ and find if it is 0 or 1. If u = v, it takes no time.  
 
+For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list  at the cost of useing asymtotically more memory.  
 
 ## Exercises & Problems
 
