@@ -32,7 +32,7 @@ If the graph is represented in ***adjacency matrix***,
 
 *Comment*  
 The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
-To determine if $(u, v) \in E$, you only need to look at $G(u, v)$. If u = v, it takes no time.  
+To determine if $(u, v) \in E$, you only need to look at $G(u, v)$ and find if it is 0 or 1. If u = v, it takes no time.  
 
 
 ## Exercises & Problems
