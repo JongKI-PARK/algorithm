@@ -17,13 +17,12 @@ If the graph is represented in ***adjacency list***,
 | Time (determine if $(u, v) \in E$) | $O(degree(u))$ |
 
 *Comment*  
-The space here is the amount of space that data structure(a graph expressed as a adjacency list) takes place.  
-The degree(u) is the number of vertices(nodes) adjacent to $u$.  
-To determine if $(u, v) \in E$, the upper bound of the elements to be examined is degree(u).  
-To represent a weighted graph as an adjacency list, add a weight field to each list.  
+* The space here is the amount of space that data structure(a graph expressed as a adjacency list) taken up in memory.  
+* The degree(u) is the number of vertices(nodes) adjacent to $u$.  
+* To determine if $(u, v) \in E$, the upper bound of the elements to be examined is degree(u).  
+* To represent a weighted graph as an adjacency list, add a weight field to each list.  
 
-A potential disadvantage of the adjacency-list representation
- * The only way to check whether a given edge (u, v) is on the graph is to check the array Adj[u].  
+A potential disadvantage of the adjacency-list representation : The only way to check whether a given edge (u, v) is on the graph is to check the array Adj[u].  
 
 <br>  
 
