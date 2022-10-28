@@ -9,7 +9,7 @@ Both adjacency list and adjacency matrices can be used to represent directed and
 
 Most of the graph algorithms in this book assume that an input graph is represented in adjacency-list form. The adjacency list representation of a graph G consists of an array which is length of the number of the vertices and each element in the array has lists of vertices adjacent to $u \in V $.  
 
-If the graph is represented in adjacency list, 
+If the graph is represented in *adjacency list*, 
 | Space / Time | notation |
 | --- | --- |
 | Space | $Θ(V + E)$ |
@@ -17,8 +17,20 @@ If the graph is represented in adjacency list,
 | Time (determine if $(u, v) \in E$) | $O(degree(u))$ |
 
 *Comment*  
-The space here is the amount of space that data structure(a graph expressed an s an adjacency list) takes place.  
+The space here is the amount of space that data structure(a graph expressed as a adjacency list) takes place.  
 The degree(u)  
+
+If the graph is represented in *adjacency matrix*,  
+| Space / Time | notation |
+| --- | --- |
+| Space | $Θ(V^2)$ |
+| Time (list all vertecies adjacent to $u$) | $Θ(V)$  |
+| Time (determine if $(u, v) \in E$) | $O(1)$ |
+
+*Comment*  
+The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
+The degree(u)  
+
 
 ## Exercises & Problems
 
