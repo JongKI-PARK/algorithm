@@ -39,6 +39,10 @@ If the graph is represented in ***adjacency matrix***,
 
 For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list  at the cost of useing asymtotically more memory.  
 
+### BFS(Breadth-first serach), DFS(Depth-first search)  
+
+
+
 ## Exercises & Problems
 
 ## Codes
