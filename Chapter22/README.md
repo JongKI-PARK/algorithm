@@ -34,8 +34,8 @@ If the graph is represented in ***adjacency matrix***,
 | Time (determine if $(u, v) \in E$) | $O(1)$ |
 
 *Comment*  
-The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
-To determine if $(u, v) \in E$, you only need to look at $G(u, v)$ and find if it is 0 or 1. If u = v, it takes no time.  
+* The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
+* To determine if $(u, v) \in E$, you only need to look at $G(u, v)$ and find if it is 0 or 1. If u = v, it takes no time.  
 
 For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list  at the cost of useing asymtotically more memory.  
 
