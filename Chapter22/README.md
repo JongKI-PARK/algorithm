@@ -18,7 +18,8 @@ If the graph is represented in ***adjacency list***,
 
 *Comment*  
 The space here is the amount of space that data structure(a graph expressed as a adjacency list) takes place.  
-The degree(u)  
+The degree(u) is the number of vertices(nodes) adjacent to $u$.  
+To determine if $(u, v) \in E$, the upper bound of the elements to be examined is degree(u).  
 
 <br>  
 
@@ -31,7 +32,7 @@ If the graph is represented in ***adjacency matrix***,
 
 *Comment*  
 The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
-The degree(u)  
+To determine if $(u, v) \in E$, you only need to look at $G(u, v)$. If u = v, it takes no time.  
 
 
 ## Exercises & Problems
