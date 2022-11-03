@@ -143,12 +143,12 @@ Codes(Written in C) for Insertion sort, Bubble sort Selection sort and Merge sor
 
 | Algorithm | name of the file(code) | Function name | Simple Explanation |
 | :---: | :---: | :---: | :---: |
-| INSERTION-SORT | insertion_sort1.c | . | sorting in non-decreasing order |
-| INSERTION-SORT | insertion_sort2.c | . | sorting in non-increasing order |
-| INSERTION-SORT | insertion_sort3.c | . | recursive version of selection sort algorithm (sorting in non-decreasing order) |
-| BUBBLE-SORT | bubble_sort.c | . | . |
+| INSERTION-SORT | insertion_sort.c | insertion_sort() | sorting in non-decreasing order |
+| INSERTION-SORT | insertion_sort.c | insertion_sort2() | sorting in non-increasing order |
+| INSERTION-SORT | insertion_sort.c | insert() & insertion_sort3() | recursive version of selection sort algorithm (sorting in non-decreasing order) |
+| BUBBLE-SORT | bubble_sort.c | bubble_sort() | . |
 | SELECTION-SORT | selection_sort.c | . | . |
-| MERGE-SORT | merge_sort.c | . | . |
+| MERGE-SORT | merge_sort.c | merge() & merge_sort() | . |
 
 <br><br>
 
