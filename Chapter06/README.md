@@ -48,6 +48,12 @@ The heap data structure is logically a complete binary tree, but physically(actu
 
 ## Codes
 
+| Algorithm | name of the file(code) | Function name | Simple Explanation |
+| :---: | :---: | :---: | :---: |
+| HEAP-SORT | heapsort.c | heapsort() | . |
+
+<br><br>
+
 ## References
 [1] https://stackoverflow.com/questions/9099110/worst-case-in-max-heapify-how-do-you-get-2n-3  
 [2]  
