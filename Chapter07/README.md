@@ -81,5 +81,12 @@ QUICKSORT
 
 ## Codes
 
+| Algorithm | name of the file(code) | Function name | Simple Explanation |
+| :---: | :---: | :---: | :---: |
+| QUCIK-SORT | quicksort.c | quicksort() | . |
+| QUICK-SORT | quicksort.c | quicksort_h() | quicksort with HOARE-PARTITION |
+
+<br><br>
+
 ## References
 [1] https://stackoverflow.com/questions/7198121/quicksort-and-hoare-partition  
