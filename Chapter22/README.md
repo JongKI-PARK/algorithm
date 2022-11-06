@@ -93,14 +93,18 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
   DFS-VISIT(u) 
   1 color[u] ← GRAY  // White vertex u has just been discovered. 
   2 time ← time + 1 
-  3 d[u] time
+  3 d[u] ← time
   4 for each v in Adj[u]  // Explore edge(u, v). 
   5     do if color[v] = WHITE 
   6           then π[v] ← u
   7                DFS-VISIT(v) 
-  8 color[u] BLACK  // Blacken u; it is finished. 
-  9 f[u]  // time ← time +1
+  8 color[u] ← BLACK  // Blacken u; it is finished. 
+  9 f[u]  // time ← time + 1
   ```
+
+*Comment* 
+* The variable time is a global variable used for timestamping.  
+* Every time DFS-VISIT(u) is called, vertex u becomes the root of a new tree in the depth-first forest.  
 
 
 ## Exercises & Problems
