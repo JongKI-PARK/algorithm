@@ -67,7 +67,7 @@ With graph G = (V + E) and distinguished source vertex s, BFS algorithm discover
   18          color[u] <- BLACK
   ```
 
-#### Analysis  
+#### BFS Analysis  
 Initialization process of line 1 - 4 takes O(V). Each vertex is enqueued and dequeued at most once so the total time devoted to queue operation is $O(V)$ (Enqueuing and dequeuing takes $O(1)$ time). The adjacency list of each vertex is scanned after dequeue operation of each verteces. The sum of the lengths of all the adjacency list is $Θ(E)$. The total running time of BFS is $O(V + E)$.  
 
 *Observation*  
@@ -103,7 +103,7 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
   9 f[u]  // time ← time + 1
   ```
 
-#### Analysis  
+#### DFS Analysis  
 
 
 *Observation*  
@@ -119,6 +119,7 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 ## Codes
 
 ## References
+[1] https://stackoverflow.com/questions/11468621/why-is-the-time-complexity-of-both-dfs-and-bfs-o-v-e  
 
 ## 궁금증
 * bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가?  
