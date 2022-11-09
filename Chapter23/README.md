@@ -1,3 +1,3 @@
 
-# Minimum Spanning Trees
+# 23. Minimum Spanning Trees
 
