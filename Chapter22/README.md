@@ -123,7 +123,8 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 > The transpose of a directed graph $G = (V, E)$ is the graph $G^T = (V, E^T)$, where $E^T = {(v, u) \in V × V : (u, v) \in E}$. Thus, $G^T$ is G with all its edges reversed. Describe efficient algorithms for computing $G^T$ from $G$, for both the adjacency-list and adjacency-matrix representations of G. Analyze the running times of your algorithms.  
 
 ### 22. 2-1
-> Show the d and π values that result from running breadth-first search on the directed graph of Figure 22.2(a), using vertex 3 as the source.  
+> Show the d and π values that result from running breadth-first search on the directed graph of Figure 22.2(a), using vertex 3 as the source.  ![image](https://user-images.githubusercontent.com/97037853/201806978-5d7f2f2b-4656-4de7-a6ca-5415c12cb0bc.png)  
+
 
 ### 22. 2-2
 > Show the d and π values that result from running breadth-first search on the undirected graph of Figure 22.3, using vertex u as the source.  
