@@ -157,6 +157,7 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 
 ## References
 [1] https://stackoverflow.com/questions/11468621/why-is-the-time-complexity-of-both-dfs-and-bfs-o-v-e  
+[2] https://tex.stackexchange.com/questions/342538/how-to-write-underneath-max-in-formula-latex  
 
 ## 궁금증
 * bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가?  
