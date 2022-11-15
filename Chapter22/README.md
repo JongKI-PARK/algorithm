@@ -138,10 +138,13 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 > The diameter of a tree T =(V, E) is given by $\max_{u,v \in V}  \delta(u, v)$ : that is, the diameter is the largest of all shortest-path distances in the tree. Give an efficient algorithm to compute the diameter of a tree, and analyze the running time of your algorithm.  
 
 ### 22. 3-2
-> Show how depth-first search works on the graph of Figure 22.6. Assume that the for loop of lines 5-7 of the DFS procedure considers the vertices in alphabetical order, and assume that each adjacency list is ordered alphabetically. Show the discovery and finishing times for each vertex, and show the classification of each edge.  $$$$$$$$$$$$$$$ figure  
+> Show how depth-first search works on the graph of Figure 22.6. Assume that the for loop of lines 5-7 of the DFS procedure considers the vertices in alphabetical order, and assume that each adjacency list is ordered alphabetically. Show the discovery and finishing times for each vertex, and show the classification of each edge.  ![image](https://user-images.githubusercontent.com/97037853/201806319-ab42cb07-92ce-4312-9be6-a32ddab4bfcd.png)  
+
 
 ### 22. 3-3
 > Show the parenthesis structure of the depth-first search shown in Figure 22.4.  
+![image](https://user-images.githubusercontent.com/97037853/201806611-09fb655a-7091-4c68-9c93-73deaa7b390f.png)
+
 
 ### 22. 3-7
 > Give a counterexample to the conjecture that if there is a path from u to v in a directed graph G, and if d[u] < d[v] in a depth-first search of G, then v is a descendant of u in the depth-first forest produced.  
