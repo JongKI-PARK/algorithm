@@ -29,6 +29,13 @@ Counting sort needed auxiliary space according to the key range. For decimal dig
 
 ## Exercises & Problems
 
+### 8. 3-1 
+### 8. 3-2(주어진 문제 대신, quick sort가 안정적인지 아닌지만 말하고, 이유를 설명하시오.) (consider only quick sort, ignore other sorts) 
+### 8. 3-4 
+### 8. 4-1
+### 8. 4-2 
+
+
 ## Codes
 
 ## References
