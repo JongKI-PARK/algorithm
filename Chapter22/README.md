@@ -112,14 +112,19 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 * Depth first search yields a forest of trees  
 * The history of discoveries and finishings makes a well-formed expression in the sense that the parentheses are properly nested  
 
+### Topological sort  
+
+  ```
+  
+  ```
+
+
 ### SCC (Strongly Connected Components)
 A strongly connected component of a directed graph G = (V + E) is a maximal set of vertices $C V$ such that for every pair of vertices u and v in C, there are paths from u to v and from v to u.(both are reachable from each other.  
 
   ```
   
   ```
-
-### Topological sort
 
 
 #### SCC Analysis
