@@ -116,6 +116,43 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 
 ## Exercises & Problems
 
+### 22. 1-1
+> Given an adjacency-list representation of a directed graph, how long does it take to compute the out-degree of every vertex? How long does it take to compute the in-degrees?  
+
+### 22. 1-3
+> The transpose of a directed graph $G = (V, E)$ is the graph $G^T = (V, E^T)$, where $E^T = {(v, u) \in V × V : (u, v) \in E}$. Thus, $G^T$ is G with all its edges reversed. Describe efficient algorithms for computing $G^T$ from $G$, for both the adjacency-list and adjacency-matrix representations of G. Analyze the running times of your algorithms.  
+
+### 22. 2-1
+> Show the d and π values that result from running breadth-first search on the directed graph of Figure 22.2(a), using vertex 3 as the source.  
+
+### 22. 2-2
+> Show the d and π values that result from running breadth-first search on the undirected graph of Figure 22.3, using vertex u as the source.  
+
+### 22. 2-3
+> What is the running time of BFS if its input graph is represented by an adjacency matrix and the algorithm is modified to handle this form of input?  
+
+### 22. 2-4
+> Argue that in a breadth-first search, the value d[u] assigned to a vertex u is independent of the order in which the vertices in each adjacency list are given. Using Figure 22.3 as an example, show that the breadth-first tree computed by BFS can depend on the ordering within adjacency lists.  
+
+### 22. 2-7
+> The diameter of a tree T =(V, E) is given by $\max_{u,v \in V}  \delta(u, v)$ : that is, the diameter is the largest of all shortest-path distances in the tree. Give an efficient algorithm to compute the diameter of a tree, and analyze the running time of your algorithm.  
+
+### 22. 3-2
+> Show how depth-first search works on the graph of Figure 22.6. Assume that the for loop of lines 5-7 of the DFS procedure considers the vertices in alphabetical order, and assume that each adjacency list is ordered alphabetically. Show the discovery and finishing times for each vertex, and show the classification of each edge.  $$$$$$$$$$$$$$$ figure  
+
+### 22. 3-3
+> Show the parenthesis structure of the depth-first search shown in Figure 22.4.  
+
+### 22. 3-7
+> Give a counterexample to the conjecture that if there is a path from u to v in a directed graph G, and if d[u] < d[v] in a depth-first search of G, then v is a descendant of u in the depth-first forest produced.  
+
+### 22. 3-8
+> Give a counterexample to the conjecture that if there is a path from u to v in a directed graph G, then any depth-first search must result in d[v] ≤ f[u].  
+
+### 22. 3-11  
+> Show that a depth-first search of an undirected graph G can be used to identify the connected components of G, and that the depth-first forest contains as many trees as G has connected components. More precisely, show how to modify depth-first search so that each vertex v is assigned an integer label cc[v] between 1 and k, where k is the number of connected components of G, such that cc[u] = cc[v] if and only if u and v are in the same connected component.  
+
+
 ## Codes
 
 ## References
@@ -123,3 +160,6 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 
 ## 궁금증
 * bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가?  
+
+## todo
+* 
