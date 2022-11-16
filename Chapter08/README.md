@@ -47,3 +47,4 @@ Counting sort needed auxiliary space according to the key range. For decimal dig
 ## Codes
 
 ## References
+[1] https://www.quora.com/How-do-I-find-number-of-digit-in-2-n  
