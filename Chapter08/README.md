@@ -1,6 +1,7 @@
 
 # 8. Sorting in Linear Time
 
+### Counting Sort
 The basic idea of COUNTING-SORT is to determine, for each input element x, the number of elements less than x. This information can be used to place element x directly into its position in the output array.
 
   ```
@@ -20,6 +21,10 @@ The basic idea of COUNTING-SORT is to determine, for each input element x, the n
 
 Counting sort needed auxiliary space according to the key range. For decimal digits, only 10 places(0, 1, 2, 3, ....9) are used. Radix sort sorts the least significant digit first. This algorithm does stable sort. Stable means that the output is affected by the input. When sorting, if there is the same number, the existing order is maintained.  
 
+
+### Radix Sort
+Radix sort sorts in the order of *least significant digit* to *most significant digit*. It is essential that the digit sorts in this algorithm be stable.  
+
   ```
   RADIX-SORT(A, d) 
   1 for i ← 1 to d
@@ -32,7 +37,7 @@ Counting sort needed auxiliary space according to the key range. For decimal dig
 ### 8. 3-1 
 > Using Figure 8.3 as a model, illustrate the operation of RADIX-SORT on the following list of English words: COW, DOG, SEA, RUG, ROW, MOB, BOX, TAB, BAR, EAR, TAR, DIG, BIG, TEA, NOW, FOX.  
 
-### 8. 3-2(주어진 문제 대신, quick sort가 안정적인지 아닌지만 말하고, 이유를 설명하시오.) (consider only quick sort, ignore other sorts) 
+### 8. 3-2 (considered only quick sort is stable or not) 
 > Which of the following sorting algorithms are stable: insertion sort, merge sort, heapsort, and quicksort? Give a simple scheme that makes any sorting algorithm stable. How much additional time and space does your scheme entail?  
 
 ### 8. 3-4 
