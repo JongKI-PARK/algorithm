@@ -58,11 +58,10 @@ overall theta (V * lg V + E * 1) = theta(V lgV + E)
 
 
 ### Bellman ford algorithm
+with negative edges and negative cycles 
 
 
-
-
-
+#### Bellman ford anlaysis
 
 
 ## Exercises & Problems
