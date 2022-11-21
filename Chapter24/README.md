@@ -60,6 +60,46 @@ overall theta (V * lg V + E * 1) = theta(V lgV + E)
 ### Bellman ford algorithm
 with negative edges and negative cycles 
 
+problem 
+: complexity could be exponential time ??? why ?/? n개의 노드에 대해 O(2^ N/2) 가 될 수 있음 -> dijkstra fixed
+: will not even terminate if there is a negative cycle reachable from the source
+
+  ```
+  BELLMAN-FORD(G, w, s) 
+  1 INITIALIZE-SINGLE-SOURCE(G, s) 
+  2 for i ← 1 to |V[G]| - 1 
+  3     do for each edge $(u, v) \in E[G]$ 
+  4            do RELAX(u, v, w) 
+  5 for each edge $(u, v) \in E[G]$ 
+  6     do if d[v] > d[u] + w(u, v) 
+  7           then return FALSE 
+  8 return TRUE 
+  ```
+
+#### Correctness
+not only correctly compute shortest path but also detect negative cycles
+
+1. Theory 
+if G contains no negative cycles, after belman ford executes, d[v] 는 델타 (u,v)가 될 것이다. 
+
+proof by induction
+think of a path p from s = v0 to vk (if k is not less than |V - 1| then there is a cycle.)
+this path p is a unique shortest path with a minimum number of edges 
+after 1 pass through all of the edges E, we have d[v1] = delta(s, v1) because we relax edge (v0,v1) during this pass 
+after k pass through all of the edges E, we have d[vk] = delta(s, vk) 
+after |V - 1| passes, all reachable vertices have delta values.  
+
+
+2. Corrolary 
+If a value d[v] fails to converge after V -1 passes, there exsists negative weight cycles reachable from s.
+
+if there is a repeated vertex in the path
+
+
+#### Bellman ford analysis
+O(VE)
+
+
 
 #### Bellman ford anlaysis
 
@@ -72,3 +112,4 @@ with negative edges and negative cycles
 
 ## 궁금증
 * why dijkstra algorithm is greedy  
+* bellman ford correctness theroy 증명에서 소스에서부터 직접 v1으로 가는 경로보다 작은 경로가 있어서 (-가 포함되면 그럴수도 있음) 첫번째 에 relax 가 안된다면?
