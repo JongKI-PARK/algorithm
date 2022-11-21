@@ -19,7 +19,49 @@ until all edges are relaxed!! 이기 때문에 모든 edge를 체크 해야 한�
 subpaths of a shortest path are shortest paths.
 (can be proved by contradiction)
 
-Dijkstra's algorithm
+### Dijkstra's algorithm
+
+  ```
+  DIJKSTRA(G, w, s) 
+  1 INITIALIZE-SINGLE-SOURCE(G, s) 
+  2 S ← Ø 
+  3 Q ← V[G] 
+  4 while Q ≠ Ø 
+  5       do u ← EXTRACT-MIN(Q) 
+  6          S ← $S \cup {u}$ 
+  7          for each vertex $v \in Adj[u]$ 
+  8              do RELAX(u, v, w)
+  ```
+Q is initialized to entire set of vertices. don't know any shortest path to any vertex. Q has vertices which needs to be processed. S contains the set of vertices that we know the shortest path. this is the loop invariant of this algorithm. It is a greedy because line 5 it picks min priority from unprocessed vertices Q and claiming this min value ????
+every loop takes different vertex from Q and moves it to S
+Q is a priority queue and the priorities are d[] values
+
+#### Dijkstra analysis
+theta (V) inserts all the vertices into priority queue
+theta (V) extract min operation
+theta (E) decrease/update operations in priority queue (relax)
+
+if array is used as a priority queue 
+extract min operation takes theta(V)
+decrease key takes theta(1)
+overall theta (V * V + E * 1) = theta(V^2) 
+
+if binary min heap is used as a priority queue
+extract min operation takes theta(log V)
+decrease key takes theta(log V)
+overall theta(V log V + E log V)
+
+if fibonacci heap is used ,
+extract min operation takes theta(lg V)
+decrease key takes theta(1)
+overall theta (V * lg V + E * 1) = theta(V lgV + E) 
+
+
+### Bellman ford algorithm
+
+
+
+
 
 
 
@@ -28,3 +70,6 @@ Dijkstra's algorithm
 ## Codes
 
 ## References
+
+## 궁금증
+* why dijkstra algorithm is greedy  
