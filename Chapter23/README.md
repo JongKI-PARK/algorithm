@@ -21,6 +21,7 @@ Prim and kruskal algorithms differ in how they select and add safe edges to A. I
   4       A ← A ∈ {(u, v)} 
   5 return A
   ```
+Here is a Generic algorithm for finding a minimum spanning tree. Generic algorithm constructs a minimum spanning tree by adding safe edges one by one. 
 
 #### Generic MST correctness
 1. Prior to each iteration, A is a subset of some minimum spanning tree.  
@@ -73,7 +74,18 @@ Prim and kruskal algorithms differ in how they select and add safe edges to A. I
 
 
 #### Kruskal and Prim algorithm Correctness
+How can the correctness proof of generic algorithms be applied to the correctness proofs of Prim and Kruskal algorithms? 
+* Remember in Prim's algorithm, the set A forms a ***single tree***. The safe edge added to A is always a least-weight edge connecting the tree to a vertex not in the tree.  
+1. Prior to each iteration, A is consisted of a single source vertex which is a subset of some minimum spanning tree.  
+1 - 1. Cut (S, V - S) is made where S = {r} and V - S = V -{r}  
+2. At each step, it determines an edge (u, v) which is safe.  
+3. Safe edge is added to A and at each step, A is still a subset of some minimum spanning tree.  
 
+
+* Remember in Kruskal's algorithm, the set A is a ***forest***. The safe edge added to A is always a least-weight edge in the graph that connects two distinct components(trees).  
+1. Prior to each iteration, A is Ø and it is a subset of some minimum spanning tree.  
+2. At each step, it determines an edge (u, v) which is safe.  
+3. Safe edge is added to A and at each step, A is still a subset of some minimum spanning tree.  
 
 ## Exercises and Problems
 
