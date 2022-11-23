@@ -109,6 +109,7 @@ O(VE)
 ## Codes
 
 ## References
+[1] https://stackoverflow.com/questions/13159337/why-doesnt-dijkstras-algorithm-work-for-negative-weight-edges  
 
 ## 궁금증
 * why dijkstra algorithm is greedy  
