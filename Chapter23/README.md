@@ -38,6 +38,11 @@ Here is a Generic algorithm for finding a minimum spanning tree. Generic algorit
 
 ### Theorem and Corollary for Kruskal and Prim algorithm
 
+Theorem (Theorem 23.1)
+Let G = (V, E) be a connected, undirected graph with a real-valued weight function w defined on E. Let A be a subset of E that is included in some minimum spanning tree for G, let (S, V - S) be any cut of G that respects A, and let (u, v) be a light edge crossing (S, V - S). Then, edge (u, v) is safe for A.
+
+Corollary 
+
 
 ### Kruskal algorithm
 
