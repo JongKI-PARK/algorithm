@@ -68,6 +68,8 @@ Prim and kruskal algorithms differ in how they select and add safe edges to A. I
   ```
 
 
+#### Kruskal and Prim algorithm Correctness
+
 
 ## Exercises and Problems
 
