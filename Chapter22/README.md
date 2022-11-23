@@ -37,7 +37,7 @@ If the graph is represented in ***adjacency matrix***,
 * The space here is the amount of space that data structure(a graph expressed as a adjacency matrix) takes place.  
 * To determine if $(u, v) \in E$, you only need to look at $G(u, v)$ and find if it is 0 or 1. If u = v, it takes no time.  
 
-For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list  at the cost of useing asymtotically more memory.  
+For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list at the cost of using asymtotically more memory.  
 
 <br>
 
@@ -115,7 +115,10 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 ### Topological sort  
 
   ```
-  
+  TOPOLOGICAL-SORT(G) 
+  1 call DFS(G) to compute finishing times f[v] for each vertex v
+  2 as each vertex is finished, insert it onto the front of a linked list 
+  3 return the linked list of vertices
   ```
 
 
@@ -123,7 +126,11 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
 A strongly connected component of a directed graph G = (V + E) is a maximal set of vertices $C V$ such that for every pair of vertices u and v in C, there are paths from u to v and from v to u.(both are reachable from each other.  
 
   ```
-  
+  STRONGLY-CONNECTED-COMPONENTS (G) 
+  1 call DFS (G) to compute finishing times f[u] for each vertex u
+  2 compute $$G^T$$
+  3 call DFS ($G^T$), but in the main loop of DFS, consider the vertices in order of decreasing f[u] (as computed in line 1) 
+  4 output the vertices of each tree in the depth-first forest formed in line 3 as a  separate strongly connected component
   ```
 
 
