@@ -1,6 +1,10 @@
 
 # 23. Minimum Spanning Trees
 
+What is Minimum Spanning Tree?  
+Tree is a connected acyclic graph. Spanning tree is a tree that contains all the vertices in graph G.  
+
+
 In an undirected graph G = (V, E) where a weight w(u, v) of each edges are given, we wish to find an acyclic subset $T \in E$ that connects all of the vertices and whose total weight $w(T) = \Sigma_{(u, v) \in T} w(u, v)$ is minimized. Since T is acyclic and connects all of the vertices, it must form a tree, which we call a spanning tree since it "spans" the graph G. We call the problem of determining the tree T the minimum-spanning-tree problem.  
 
 
