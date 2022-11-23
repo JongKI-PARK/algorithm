@@ -7,7 +7,8 @@ Not all exercises and problems are covered. I will cover only some of them. Howe
 
 Finally, I would like to express my gratitude to Professor Junmo Kim for providing me with a good algorithm lecture.  
 
-## Chapters and Codes
+## Contents
+Chapters and Codes
 
 ## References
 [1]  Thomas, H. Cormen, Charles, E. Leiserson, Ronald, L. Rivest, & Clifford, Stein (2001). Introduction to Algorithms (2nd ed.). McGraw-Hill Science.  
