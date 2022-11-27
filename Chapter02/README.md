@@ -1,7 +1,7 @@
 
 # 2. Getting Started   
 
-Why sorting? : Having a sorted list, the problems can be easier. When finding median(takes constant time), Binary search, Data compression ... etc. Let's begin with INSERTION-SORT Algorithm.  
+Why sorting? : Having a sorted list, the problems can be easier hen finding median(takes constant time), Binary search, Data compression ... etc. Let's begin with INSERTION-SORT Algorithm.  
 
  ```
  INSERTION-SORT(A)
