@@ -73,7 +73,11 @@ Initialization process of line 1 - 4 takes O(V). Each vertex is enqueued and deq
 *Observation*  
 * The total running time of BFS is $O(V + E)$ because it cannot reach to unconnected nodes starting from vertex $s$. In other words, in the case of BFS, it may not be possible to reach all nodes in the graph unless all nodes in the graph are connected to each other.  
 * The enqueue order follows the (arbitrary) order in the graph's adjacency list, but after enqueue it is fifo order.  
-* In BFS, the distance values of the nodes in the queue are at most two. (It cannot be more than three.)  
+* In BFS, the distance values of the nodes in the queue are at most two. (It cannot be more than three.) -> proof in Lemma 22.3  
+
+Lemma 22.3(Proof by induction)  
+
+
 
 <br>
 
