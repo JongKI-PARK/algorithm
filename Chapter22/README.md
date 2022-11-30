@@ -43,7 +43,7 @@ For faster edge lookup, adjacency-matrix ls more powerful than adjacency-list at
 
 ### BFS(Breadth-first serach)  
 
-With graph G = (V + E) and distinguished source vertex s, BFS algorithm discovers all vertices at distance k from s before discovering any vertices at distance k + 1. Breath-first search constructs a breath-first tree, initially containing only its root, which is the source vertex s. Whenever a white vertex v is discovered in the course of scanning the adjacency list of an already discovered vertex u, the vertex v and the dege (u, v) are added to the tree. BFS algorithm below assumes that the input graph G is represented using adjacency-lists.  
+With graph G = (V + E) and distinguished source vertex s, BFS algorithm discovers all vertices at distance k from s before discovering any vertices at distance k + 1. Breath-first search constructs a breath-first tree, initially containing only its root, which is the source vertex s. Whenever a white vertex v is discovered in the course of scanning the adjacency list of an already discovered vertex u, the vertex v and the edge (u, v) are added to the tree. BFS algorithm below assumes that the input graph G is represented using adjacency-lists.  
 
   ```
   BFS(G, s) 
