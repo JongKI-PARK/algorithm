@@ -64,10 +64,11 @@ Bucket sort runs in linear time when the input is drawn from a uniform distribut
 
 
 #### Bucket sort analysis
-Line 1 to 3 takes $\theta(n)$ because it distributes the n input values into the bucket.  
-Line 4 to 5 takes $\theta(1)$. The worst case of insertion sort is O(n^2), but it is strange that it is O(1). The reason is because "the data is assumed to come from the uniform distribution". Assuming that the data has a uniform distribution, each list in B has a constant length, so insertion sort can be executed in constant time.  
-Concatenation in Line 6 takes $\theta(n)$.  
+* Line 1 to 3 takes $\theta(n)$ because it distributes the n input values into the bucket.  
+* Line 4 to 5 takes $\theta(1)$. The worst case of insertion sort is O(n^2), but it is strange that it is O(1). The reason is because "the data is assumed to come from the uniform distribution". Assuming that the data has a uniform distribution, each list in B has a constant length, so insertion sort can be executed in constant time.  
+* Concatenation in Line 6 takes $\theta(n)$.  
 
+Bucket sort takes O(n) (linear time).  
 
 ## Exercises & Problems
 
