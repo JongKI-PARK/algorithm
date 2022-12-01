@@ -74,9 +74,24 @@ Initialization process of line 1 - 4 takes O(V). Each vertex is enqueued and deq
 * The total running time of BFS is $O(V + E)$ because it cannot reach to unconnected nodes starting from vertex $s$. In other words, in the case of BFS, it may not be possible to reach all nodes in the graph unless all nodes in the graph are connected to each other.  
 * The enqueue order follows the (arbitrary) order in the graph's adjacency list, but after enqueue it is fifo order.  
 * In BFS, the distance values of the nodes in the queue are at most two. (It cannot be more than three.) -> proof in Lemma 22.3  
+* BFS cannot search disconnected part of the graph starting from s.  
 
 Lemma 22.3(Proof by induction)  
 
+
+
+
+### Print path
+PRINT-PATH, an algorithm that prints a path using π[] obtained through the result of bfs, runs in linear time.  
+  ```
+  PRINT-PATH(G, s, v) 
+  1 if v = s
+  2    then print s
+  3 else if π[v] = NIL 
+  4         then print "no path from" s "to" v "exists" 
+  5      else PRINT-PATH(G, s, π[v]) 
+  6           print v
+  ```
 
 
 <br>
@@ -104,17 +119,16 @@ Depth-first search *timestamps* each vertex. Each vertex has two timestamps : th
   6           then π[v] ← u
   7                DFS-VISIT(v) 
   8 color[u] ← BLACK  // Blacken u; it is finished. 
-  9 f[u]  // time ← time + 1
+  9 f[u] ← time ← time + 1
   ```
 
 #### DFS Analysis  
 
 
 *Observation*  
-* The variable time is a global variable used for timestamping.  
-* Every time DFS-VISIT(u) is called, vertex u becomes the root of a new tree in the depth-first forest.  
-* Depth first search yields a forest of trees  
-* The history of discoveries and finishings makes a well-formed expression in the sense that the parentheses are properly nested  
+* All the timestamps are integers between 1 and 2|V|, since all vertices get two timestamps each and there is no skipping in the middle of the time when taking timestamps. In other words, 1 <= d[v] < f[v] <=2|V| on all vertices.  
+* Depth first search yields a forest of trees and every time DFS-VISIT(u) is called by DFS(), vertex u becomes the root of a new tree in the depth-first forest.  
+* The history of discoveries and finishings makes a well-formed expression in the sense that the parentheses are properly nested.  
 
 ### Topological sort  
 
@@ -189,7 +203,7 @@ A strongly connected component of a directed graph G = (V + E) is a maximal set 
 [1] https://stackoverflow.com/questions/11468621/why-is-the-time-complexity-of-both-dfs-and-bfs-o-v-e  
 
 ## 궁금증
-* bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가?  
+* bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가? -> bfs가 모든 노드를 방문하지 못할 가능성이 있기 때문이다.  
 
 ## todo
 * 
