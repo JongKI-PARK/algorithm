@@ -56,7 +56,7 @@ Bucket sort runs in linear time when the input is drawn from a uniform distribut
   6 concatenate the lists B[0], B[1], . . ., B[n - 1] together in order
   ```
 
-### Bucket sort correctness
+#### Bucket sort correctness
 
 1. For two elements A[i] and A[j] where A[i] <= A[j], element A[i] is placed either into the same bucket as A[j] or into a bucket with a lower index.  
 2-1. If they are located in the same bucket, they are sorted by insertion sort.  
