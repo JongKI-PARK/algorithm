@@ -159,11 +159,46 @@ A strongly connected component of a directed graph G = (V + E) is a maximal set 
 ### 22. 1-1
 > Given an adjacency-list representation of a directed graph, how long does it take to compute the out-degree of every vertex? How long does it take to compute the in-degrees?  
 
+In a directed graph, in degree is the number of edges entering a vertex, and out degree is the number of edges exiting a vertex.  
+
+*out degree*:  
+When a directed graph is represented as an adjacency list, the number of elements of adj[u] of each vertex u represents the out degree.  
+
+*in degree*:  
+If $v \in adj[u]$ for each vertex, the in degree can be obtained by increasing the counter of v by one.  
+
+Both out degree and in degree methods are $\theta(V + E)$.  
+
 ### 22. 1-3
 > The transpose of a directed graph $G = (V, E)$ is the graph $G^T = (V, E^T)$, where $E^T = {(v, u) \in V × V : (u, v) \in E}$. Thus, $G^T$ is G with all its edges reversed. Describe efficient algorithms for computing $G^T$ from $G$, for both the adjacency-list and adjacency-matrix representations of G. Analyze the running times of your algorithms.  
 
+*case of adjacency list*  
+1 Create V'[G] identical to V[G] in the previously expressed adjacency list.  
+2 for each vertex $v \in V[G]$  
+3     for each vertex u \in Adj[v]  
+4         Insert(V'[u], v)  
+
+Since transpose operation for adjacency list requires looking all the vertices and edges, it takes $\theta(|V| + |E|)$.  
+
+*case of adjacency matrix*  
+1 for i <- to number of vertices in V  
+2     for j <- i to number of vertices in V  
+3         exchange $V_{ij}$ <-> $V_{ji}$  
+
+Transpose operation for adjacency matrix requires looking all the elements in the matrix, it takes $O(|V|^2)$.  
+
 ### 22. 2-1
 > Show the d and π values that result from running breadth-first search on the directed graph of Figure 22.2(a), using vertex 3 as the source.  ![image](https://user-images.githubusercontent.com/97037853/201806978-5d7f2f2b-4656-4de7-a6ca-5415c12cb0bc.png)  
+
+d value  
+| 1 | 2 | 3 | 4 | 5 | 6 |
+| :---: | :---: | :---: | :---: | :---:| :---: |
+|  |  |  |  |  |  |
+
+$\pi$ value  
+| 1 | 2 | 3 | 4 | 5 | 6 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|  |  |  |  |  |  |
 
 
 ### 22. 2-2
