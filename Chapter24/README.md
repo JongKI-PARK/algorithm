@@ -100,6 +100,7 @@ overall theta (V * lg V + E * 1) = theta(V lgV + E)
 ## References
 [1] https://stackoverflow.com/questions/13159337/why-doesnt-dijkstras-algorithm-work-for-negative-weight-edges  
 [2] https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/  
+[3] http://theory.stanford.edu/~tim/w11/l/scc.pdf  
 
 
 ## 궁금증
