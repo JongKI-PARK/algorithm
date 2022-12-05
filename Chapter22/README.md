@@ -238,7 +238,8 @@ $\pi$ value
 [1] https://stackoverflow.com/questions/11468621/why-is-the-time-complexity-of-both-dfs-and-bfs-o-v-e  
 [2] https://stackoverflow.com/questions/17744485/clrs-depth-first-search-theorem-22-10  
 [3] https://sharmaeklavya2.github.io/theoremdep/nodes/graph-theory/dfs/cycle-iff-back-edges-directed.html  
-
+[4] https://stackoverflow.com/questions/11212676/what-are-strongly-connected-components-used-for  
+[5] http://theory.stanford.edu/~tim/w11/l/scc.pdf  
 ## 궁금증
 * bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가? -> bfs가 모든 노드를 방문하지 못할 가능성이 있기 때문이다.  
 
