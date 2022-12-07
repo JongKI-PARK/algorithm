@@ -56,4 +56,5 @@ The heap data structure is logically a complete binary tree, but physically(actu
 
 ## References
 [1] https://stackoverflow.com/questions/9099110/worst-case-in-max-heapify-how-do-you-get-2n-3  
-[2]  
+[2] https://stackoverflow.com/questions/19336881/why-isnt-heapsort-stable  
+
