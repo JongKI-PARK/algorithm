@@ -240,6 +240,8 @@ $\pi$ value
 [3] https://sharmaeklavya2.github.io/theoremdep/nodes/graph-theory/dfs/cycle-iff-back-edges-directed.html  
 [4] https://stackoverflow.com/questions/11212676/what-are-strongly-connected-components-used-for  
 [5] http://theory.stanford.edu/~tim/w11/l/scc.pdf  
+[6] https://stackoverflow.com/questions/3929079/how-can-i-remember-which-data-structures-are-used-by-dfs-and-bfs  
+
 ## 궁금증
 * bfs분석에서 초기화 과정이 O(V)인 이유가 있나? 세타 V아닌가? -> bfs가 모든 노드를 방문하지 못할 가능성이 있기 때문이다.  
 
