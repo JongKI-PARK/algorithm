@@ -14,9 +14,6 @@ Exercises and Problems in each Chapters and Codes according to each chapters are
 [2]  MIT OpenCourseWare https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqazJFR2dUY0pWekRVNjdPNDF5VXZweFpqbTdjZ3xBQ3Jtc0ttQ3RZdVlpS0Fxb0c0WGdOSWVJTTJWQTJ2Sml3djA3MWM1UmlNRW5xN3VobE1DNDljbWFXRXZJT1V1WXpQOVhEMktUenhaLTJJaExiaEtEZnNiaDJUc0UwOHdtdjVUWmJISjlwcXFjcXdCS1lGUl9sZw&q=https%3A%2F%2Focw.mit.edu  
 [3]  John E. Hopcroft, Rajeev Montwani, Feffrey D. Ulman. Introduction to Automata Theory, Languages, and Computation 2nd Edition  
 [4]  Kenneth Rosen, Descrete Mathmatics and its Application 8th Edition  
-
-
-professor's solutions  
 [5] https://theswissbay.ch/pdf/Gentoomen%20Library/Algorithms/Introduction%20to%20Algorithms-Cormen%20Solution.pdf  
 [6] https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/selected-solutions.pdf  
 [7] https://www2.compute.dtu.dk/~phbi/files/teaching/solution.pdf  
