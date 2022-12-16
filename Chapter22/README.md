@@ -204,14 +204,29 @@ $\pi$ value
 ### 22. 2-2
 > Show the d and π values that result from running breadth-first search on the undirected graph of Figure 22.3, using vertex u as the source.  
 
+d value  
+| 1 | 2 | 3 | 4 | 5 | 6 |
+| :---: | :---: | :---: | :---: | :---:| :---: |
+|  |  |  |  |  |  |
+
+$\pi$ value  
+| 1 | 2 | 3 | 4 | 5 | 6 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|  |  |  |  |  |  |
+
+
 ### 22. 2-3
 > What is the running time of BFS if its input graph is represented by an adjacency matrix and the algorithm is modified to handle this form of input?  
+
+Line 12 - 19 takes $O(E) = O(V^2)$. The total running time of BFS becomes $O(V + V^2) = O(V^2)$ when the graph G is represented in adjacency matrix.  
 
 ### 22. 2-4
 > Argue that in a breadth-first search, the value d[u] assigned to a vertex u is independent of the order in which the vertices in each adjacency list are given. Using Figure 22.3 as an example, show that the breadth-first tree computed by BFS can depend on the ordering within adjacency lists.  
 
+
 ### 22. 2-7
 > The diameter of a tree T =(V, E) is given by $\max_{u,v \in V}  \delta(u, v)$ : that is, the diameter is the largest of all shortest-path distances in the tree. Give an efficient algorithm to compute the diameter of a tree, and analyze the running time of your algorithm.  
+
 
 ### 22. 3-2
 > Show how depth-first search works on the graph of Figure 22.6. Assume that the for loop of lines 5-7 of the DFS procedure considers the vertices in alphabetical order, and assume that each adjacency list is ordered alphabetically. Show the discovery and finishing times for each vertex, and show the classification of each edge.  ![image](https://user-images.githubusercontent.com/97037853/201806319-ab42cb07-92ce-4312-9be6-a32ddab4bfcd.png)  
@@ -224,6 +239,7 @@ $\pi$ value
 
 ### 22. 3-7
 > Give a counterexample to the conjecture that if there is a path from u to v in a directed graph G, and if d[u] < d[v] in a depth-first search of G, then v is a descendant of u in the depth-first forest produced.  
+
 
 ### 22. 3-8
 > Give a counterexample to the conjecture that if there is a path from u to v in a directed graph G, then any depth-first search must result in d[v] ≤ f[u].  
