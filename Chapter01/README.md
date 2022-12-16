@@ -13,7 +13,7 @@ To solve a large scale problem, Data Structure and efficient algorithm is needed
 
 Algorithm is well defined computational procedure that takes input and output. "Well defined procedure" is important because well defined means that it is expressed logically. Accoring to Turing's idea, If it is expressed logically, it can be done automatically. In other words, if you want something to be done automatically, it should be well defined.  
 
-In Turing Machine, the working procedure is expressed in the form of a table. Movement (state transition) between states in the table is automatic.  
+In Turing Machine, the working procedure is expressed in the form of a ***table***. Movement (state transition) between states in the table is automatic.  
 | Current State | Next State | 
 | --- | --- |
 | | |
