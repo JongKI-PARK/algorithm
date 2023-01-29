@@ -1,7 +1,7 @@
 
 # 1. The Role of Algorithms in Computing  
 
-To solve a large scale problem, Data Structure and efficient algorithm is needed. Data Structure is the way data is expressed in memory.  
+To solve a large scale problem, "Data Structure" and "Efficient Algorithm" is needed. Data Structure is the way data is expressed in memory.  
 
 <pre>
                       -------------------
