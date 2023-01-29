@@ -1,18 +1,18 @@
 
 # 2. Getting Started   
 
-Why sorting? : Having a sorted list, the problems can be easier hen finding median(takes constant time), Binary search, Data compression ... etc. Let's begin with INSERTION-SORT Algorithm.  
+Why sorting? : Having a sorted list, the problems can be easier when finding median(takes constant time), Binary search, Data compression ... etc. Let's start with one of the sorting algorithms, the INSERTION-SORT algorithm.  
 
  ```
  INSERTION-SORT(A)
- 1  for j >- 2 to length[A]
- 2      do key <- A[j]
+ 1  for j ← 2 to length[A]
+ 2      do key ← A[j]
  3         // Insert A[j] into the sorted sequence A[1 ... j - 1]
- 4         i <- j - 1
+ 4         i ← j - 1
  5         while i > 0 and A[i] > key
- 6               do A[i + 1] <- A[i]
- 7                  i <- i - 1
- 8         A[i + 1] <- key
+ 6               do A[i + 1] ← A[i]
+ 7                  i ← i - 1
+ 8         A[i + 1] ← key
  ```
 INSERTION-SORT algorithm is finding the correct position of A[j] in sorted array A[1 ... j - 1]. To find the right position of newly inserted element, it shifts element in the sorted array to the right one by one. INSERTION-SORT has $Θ(n)$ steps in terms of finding the key positions, $Θ(n)$ swap/compare per steps. So the time complexity of INSERTION-SORT is $Θ(n^2)$. If binary search is used in the process of selecting the correct position in insertion sort, the time complexity will be $O(n lgn)$ in terms of comparison, but it will still be $O(n^2)$ in terms of swap(shift).  
 
@@ -21,15 +21,15 @@ Insertion sort uses an incremental approach: insert a single element A[j] into a
  
  ```
  MERGE(A, p, q, r)
-  1  n1 <- q - p - 1
-  2  n2 <- r - q
+  1  n1 ← q - p - 1
+  2  n2 ← r - q
   3  create arrays L[1 ... n1 + 1] and R[1 ... n2 + 1]
-  4  for i <- 1 to n1
+  4  for i ← 1 to n1
   5      do L[i] <- A[q + i - 1]
-  6  for j <- 1 to n2
+  6  for j ← 1 to n2
   7      do R[j] <- A[q + j]
-  8  L[n1 + 1] <- ∞
-  9  R[n2 + 1] <- ∞
+  8  L[n1 + 1] ← ∞
+  9  R[n2 + 1] ← ∞
  10  i ← 1 
  11  j ← 1 
  12  for k ← p to r
@@ -63,8 +63,8 @@ From this point of view, it may seem that insertion sort is unnecessary. But the
 > Show the run time of each line as shown in the insertion sort, then give the worst/average time of bubble sort
  ```
  BUBBLESORT(A)
- 1  for i <- 1 to length[A] - 1
- 2      do for j <- length[A] downto i + 1
+ 1  for i ← 1 to length[A] - 1
+ 2      do for j ← length[A] downto i + 1
  3             do if A[j] < A[j - 1] 
  4                   then exchange A[j] <-> A[j - 1]
  ```
@@ -84,13 +84,13 @@ Best case of the bubble sort is when $t_k$ is 0. Worst case is when $t_k$ to be 
 The algorithm INSERTION-SORT at the top of this page is to sort the array into non decreasing order. Here is the algorithm that sorts the array into non increasing order.
  ```
  INSERTION-SORT(A)
- 1  for j <- 2 to length[A]
- 2      key <- A[j]
- 3      i <- j - 1
+ 1  for j ← 2 to length[A]
+ 2      key ← A[j]
+ 3      i ← j - 1
  4      while i > 0 and A[i] < key
  5            A[i + 1] <- A[i]
- 6            i <- i - 1
- 7      A[i + 1] <- key
+ 6            i ← i - 1
+ 7      A[i + 1] ← key
  ```
      
 ### 2. 2-2
@@ -98,13 +98,13 @@ The algorithm INSERTION-SORT at the top of this page is to sort the array into n
 
  ``` 
  SELECTION-SORT(A)
- 1  for i <- 1 to length[A] - 1
- 2      key <- A[i]
- 3      min-index <- i
- 4      for j <- i to length[A]
+ 1  for i ← 1 to length[A] - 1
+ 2      key ← A[i]
+ 3      min-index ← i
+ 4      for j ← i to length[A]
  5          if A[j] < key
- 6             key <- A[j]
- 7             min-index <- j
+ 6             key ← A[j]
+ 7             min-index ← j
  8      if min-index != i
  9         exchange A[i] <-> A[min-index]
  ```
@@ -121,12 +121,12 @@ For linear search, $n\over 2$ searches will be required on average. The worst ca
  
  ```
  INSERT(A, index)
- 1  key <- A[index]
- 2  i <- index - 1
+ 1  key ← A[index]
+ 2  i ← index - 1
  3  while i > 0 and A[i] > key
- 4        A[i + 1] <- A[i]
- 5        i <- i - 1
- 6  A[i + 1] <- key
+ 4        A[i + 1] ← A[i]
+ 5        i ← i - 1
+ 6  A[i + 1] ← key
  
  INSERTION-SORT(A, size)
  1  if (size > 0)
